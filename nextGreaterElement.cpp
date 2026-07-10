@@ -4,7 +4,7 @@
 
  using namespace std;
     int main (){
-        int nums1,nums2=0
+        int nums1,nums2=0;
 
         for (int i = 0; i <=   nums1.size()-1 ; i++) {
             int flag = 0;
