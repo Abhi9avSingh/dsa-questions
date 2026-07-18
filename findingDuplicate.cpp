@@ -29,5 +29,5 @@ vector<int> findDuplicates(vector<int>& nums) {
      }
 int main (){
     vector<int>arr={1,2,4,5,3,5};
-   cout<< " "<< findingDuplicate(arr);
+   cout<< "  "<< findingDuplicate(arr);
 }
