@@ -14,5 +14,5 @@ vector<int> twoSum(vector<int>& nums, int target) {
             }
             d[nums[i]]=i;
         }
-        return an;
+        return ans;
     }
