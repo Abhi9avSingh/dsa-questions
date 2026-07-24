@@ -5,7 +5,7 @@ using namespace std;
 int guess ( int n ){
     int srand = time(0);
 
-    // int a  =  rand();
+    
     return srand;
 }
 
