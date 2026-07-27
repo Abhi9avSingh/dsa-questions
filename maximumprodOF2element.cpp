@@ -7,7 +7,7 @@ public:
         sort(nums.begin(), nums.end());
         int a = nums.size();
         int ans =(nums[a-1]-1 )* (nums[a-2]-1);
-        
+        int b ;
 
         return ans;
     }
