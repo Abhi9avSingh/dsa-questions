@@ -11,5 +11,5 @@ using namespace std;
         number = number*10 + digit ;
         b = b/10;
         }
-       return x ==number;
+       retur x ==number;
     }
