@@ -19,6 +19,6 @@ int peakIndexInMountainArray(vector<int>& arr) {
             }
         }
         return s;
-        ;
+        
     }
  
