@@ -13,6 +13,6 @@ public:
 
             ans[(i + k) % n] = nums[i];
         }
-        nums= ans;
+        nums= ansswer;
     }
 };
