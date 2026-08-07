@@ -2,8 +2,7 @@
 
 using namespace std;
 
-class Solution {
-public:
+ 
     void rotate(vector<int>& nums, int k) {
         int n = nums.size();
 
@@ -15,4 +14,4 @@ public:
         }
         nums= ans;
     }
-};
+ 
