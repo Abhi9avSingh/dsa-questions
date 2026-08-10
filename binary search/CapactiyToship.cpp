@@ -3,8 +3,7 @@
 using namespace std;
 
 
-class Solution {
-public:
+ 
     bool isPossible(vector<int>& weights, int days, int mid) {
         int countDays = 1;
         int CountSum = 0;
@@ -40,4 +39,4 @@ public:
         }
         return ans;
     }
-};
+ 
