@@ -37,6 +37,6 @@ using namespace std;
             } else
                 s = mid + 1;
         }
-         
+        return ans;
     }
  
