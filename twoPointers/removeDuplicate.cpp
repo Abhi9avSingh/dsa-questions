@@ -5,7 +5,6 @@ using namespace std;
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
-    
         int i = 1;
         int j = 0;
         int ne = 1;
