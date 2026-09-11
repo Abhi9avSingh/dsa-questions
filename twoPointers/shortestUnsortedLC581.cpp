@@ -38,7 +38,7 @@ public:
       else{
             count =  (b-a)+1;}
          
-          
+        
 
 return count ;
         
