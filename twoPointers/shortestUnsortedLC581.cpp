@@ -17,7 +17,6 @@ public:
 
             
 
-
          for ( int i =0; i<nums.size();i++){
             if ( ans[i]!=nums[i]){
                 a =i;
