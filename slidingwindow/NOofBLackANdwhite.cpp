@@ -26,3 +26,42 @@ public:
         return result ;
     }
 };
+
+
+////// OPTIMIZED APPROACH /////
+
+class Solution {
+public:
+    int minimumRecolors(string blocks, int k) {
+        int n = blocks.size();
+        int count = 0;
+        int result = INT_MAX;
+
+        // First window
+        for (int i = 0; i < k; i++) {
+            if (blocks[i] == 'W') {
+                count++;
+            }
+        }
+
+        result = count;
+
+        // Slide the window
+        for (int i = k; i < n; i++) {
+
+            // Add the new character
+            if (blocks[i] == 'W') {
+                count++;
+            }
+
+            // Remove the character leaving the window
+            if (blocks[i - k] == 'W') {
+                count--;
+            }
+
+            result = min(result, count);
+        }
+
+        return result;
+    }
+};
