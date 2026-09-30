@@ -5,7 +5,8 @@ using namespace std;
 class Solution {
 public:
     int countGoodSubstrings(string s) {
-        if (s.size() < 3) return 0;
+        if (s.size() < 3) return 0;// important to check
+        
         vector<int> f(26, 0);
         int count = 0;
 
