@@ -19,6 +19,6 @@ public:
          }
          
          return j==s.size();
-        
+    
     }
 };
