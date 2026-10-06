@@ -43,7 +43,7 @@ class Solution:
         while num3 != 0:
             add = num3 % 10
             dummy.next = ListNode(add)
-            dummy = dummy.next
+            dummy = dummy.nex
             num3 //= 10
 
         return dummyHead.next
