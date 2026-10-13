@@ -14,4 +14,10 @@ then salary
 else 0 
 end as bonus from Employees
 order by employee_id;
- 
+ -------------------------------------------------------------
+ 1068. Product Sales Analysis I
+ # Write your MySQL query statement below
+select product.product_name,sales.year,sales.price
+from sales
+inner join product
+on sales.product_id = product.product_id;
