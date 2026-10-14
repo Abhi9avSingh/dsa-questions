@@ -21,3 +21,10 @@ select product.product_name,sales.year,sales.price
 from sales
 inner join product
 on sales.product_id = product.product_id;
+--------------------------------------------------------------
+1527. Patients With a Condition
+# Write your MySQL query statement below
+select patient_id,patient_name , conditions 
+from patients
+where conditions  like 'DIAB1%'
+     or conditions like '% DIAB1%';
