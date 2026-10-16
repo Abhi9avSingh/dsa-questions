@@ -39,3 +39,11 @@ left join transactions
 on visits.visit_id = transactions.visit_id
 where transactions.transaction_id is null
 group by visits.customer_id;
+
+--------------------------------------------------------------------
+620. Not Boring Movies
+# Write your MySQL query statement b
+select id , movie ,description ,rating from cinema 
+where id %2!=0
+and description != 'boring'
+order  by rating desc ;
