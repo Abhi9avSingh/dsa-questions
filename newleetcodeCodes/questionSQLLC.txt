@@ -47,3 +47,12 @@ select id , movie ,description ,rating from cinema
 where id %2!=0
 and description != 'boring'
 order  by rating desc ;
+----------------------------------------------------------------------
+1667. Fix Names in a Table
+SELECT user_id,
+       CONCAT(
+           UPPER(SUBSTRING(name, 1, 1)),
+           LOWER(SUBSTRING(name, 2))
+       ) AS name
+FROM Users
+ORDER BY user_id ASC;
