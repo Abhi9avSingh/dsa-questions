@@ -34,3 +34,22 @@
 
         // }
         // return col;
+         int col = 0;
+        int n = directions.size();
+
+        int i = 0;
+        while (i < n && directions[i] == 'L') {
+            i++;
+        }
+        int j = n - 1;
+        while (j >= i && directions[j] == 'R') {
+            j--;
+        }
+        while (i <= j) {
+            if (directions[i] != 'S') {
+                col++;
+            }
+            i++;
+        }
+
+        return col;
