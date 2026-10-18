@@ -56,3 +56,10 @@ SELECT user_id,
        ) AS name
 FROM Users
 ORDER BY user_id ASC;
+---------------------------------------------------------------------------
+175. Combine Two Tables
+# Write your MySQL query statement below
+select person.firstName,person.lastName,address.city,address.state
+from person 
+left join address
+on person.personid = address.personid;
