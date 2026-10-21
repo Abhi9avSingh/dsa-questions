@@ -94,3 +94,13 @@ select actor_id ,director_id
  from actorDirector 
 group by actor_Id,director_id
 having count(*)>=3;
+------------------------------------------------------------------------------
+586. Customer Placing the Largest Number of Orders
+# Write your MySQL query statement below
+select  customer_number
+from orders
+group by customer_number
+order by count(*) desc
+limit 1;
+
+
