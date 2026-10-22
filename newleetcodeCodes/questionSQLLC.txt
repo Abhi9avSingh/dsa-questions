@@ -87,3 +87,10 @@ from  users
 on users.account = transactions.account
 group by users.account ,users.name 
 having sum( transactions.amount )>10000; 
+-------------------------------------------------------------------------------
+1050. Actors and Directors Who Cooperated At Least Three Times
+# Write your MySQL query statement below
+select actor_id ,director_id
+ from actorDirector 
+group by actor_Id,director_id
+having count(*)>=3;
