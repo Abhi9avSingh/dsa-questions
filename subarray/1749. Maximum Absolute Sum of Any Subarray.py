@@ -14,3 +14,4 @@ class Solution:
             ans = max(ans, last, abs(mini))
 
         return ans
+        
