@@ -87,3 +87,62 @@ class Solution:
             prev_tail = temp1
 
         return new_head if new_head != None else head
+        # --------------------------- my approach ------------------------------------
+
+        class Solution:
+    def reverse(self, head: ListNode | None, x: int) -> ListNode | None:
+        curr = head
+        prev = None
+        dummy = None
+        i = 0
+
+        while curr != None and i < x:
+            dummy = curr.next
+            curr.next = prev
+            prev = curr
+            curr = dummy
+            i += 1
+
+        return prev
+
+    def reverseKGroup(self, head: ListNode | None, k: int) -> ListNode | None:
+        if head == None or k == 1:
+            return head
+
+        prev = None
+        curr = head
+        temp = curr
+        curr1 = curr
+ 
+        i = k
+        while curr1 != None and i > 1:
+            curr1 = curr1.next
+            i -= 1
+
+        if curr1 == None:
+            return head
+
+        head = curr1
+ 
+        while curr != None:
+            i = k
+            temp = curr
+            count = 0
+
+            while i != 0 and curr != None:
+                curr = curr.next
+                count += 1
+                i -= 1
+
+            if count < k:
+                break
+
+            rev = self.reverse(temp, k)
+
+            if prev != None:
+                prev.next = rev
+
+            prev = temp
+            temp.next = curr
+
+        return head
