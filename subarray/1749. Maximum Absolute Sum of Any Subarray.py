@@ -8,6 +8,7 @@ class Solution:
             a = last + nums[i]
             b = nums[i]
 
+
             last = max(a, b)
             mini = min(mini + nums[i], nums[i])
 
